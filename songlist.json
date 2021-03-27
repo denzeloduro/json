@@ -3,61 +3,61 @@
 	"title": "Halo",
 	"artist": "Beyonce",
 	"genre": ["Pop","RnB"],
-	"year": 2009,
-}
+	"year": "2009"
+},
 	{
 	"title": "Foolish",
 	"artist": "Ashanti",
 	"genre": ["RnB"],
-	"year": 2002,
-}
+	"year": "2002"
+},
 	{
 	"title": "All of Me",
 	"artist": "John Legend",
 	"genre": ["RnB"],
-	"year": 2013,
-}
+	"year": "2013"
+},
 	{
 	"title": "Take a Bow",
 	"artist": "Rihanna",
 	"genre": ["Pop","RnB"],
-	"year": 2008,
-}
+	"year": "2008"
+},
 	{
 	"title": "New Rules",
 	"artist": "Dua Lipa",
 	"genre": ["Tropical House","Electropop"],
-	"year": 2017,
-}
+	"year": "2017"
+},
 	{
 	"title": "Bad Guy",
 	"artist": "Billie Eilish",
 	"genre": ["Electropop","Dance-pop"],
-	"year": 2019,
-}
+	"year": "2019"
+},
 	{
 	"title": "Happy",
 	"artist": "Pharrel Williams",
 	"genre": ["Soul"],
-	"year": 2013,
-}
+	"year": "2013"
+},
 
 	{
 	"title": "My Girl",
 	"artist": "The Temptations",
 	"genre": ["Soul"],
-	"year": 1964,
-}
+	"year": "1964"
+},
 	{
 	"title": "Juice",
 	"artist": "Lizzo",
 	"genre": ["Pop"],
-	"year": 2019,
-}
+	"year": "2019"
+},
 	{
 	"title": "Someone Like You",
 	"artist": "Adele",
 	"genre": ["Pop"],
-	"year": 2011,
+	"year": "2011"
 }
 	]
