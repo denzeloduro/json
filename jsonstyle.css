@@ -1,0 +1,17 @@
+*{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1rem;
+}
+
+.h1{
+	font: 4rem 'Lato', sans-serif;
+	font-weight:800;
+	color:#272727;
+	line-height:3.125rem;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:left;
+	margin top:90px;
+	margin bottom:60px;
+}

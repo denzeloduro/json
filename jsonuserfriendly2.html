@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JSON Songlist</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" type="text/css" href="jsonstyle.css">
+		<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+		<!--script language="javascript" src="songlist.json"></script-->
+
+	</head>
+	<body>
+
+	<div class="h1">Song List</div>
+	<div id="body">
+	</div>
+
+
+		<script language="javascript">
+			//printing my data in a table format
+				$.get("https://raw.githubusercontent.com/denzeloduro/json/main/songlist.json", function( songs ) {
+			  		var songList = "";
+				  	var songObjects = JSON.parse(songs);
+				  	songObjects.forEach(function(song){
+
+			  		//printing my data in a table format
+			  		songList += song.title +"</br>"; 
+			  		songList += song.artist +"</br>"; 
+			  		songList += song.genre +"</br>"; 
+			  		songList += song.year +"</br></br>"; 
+			  		
+			  	})
+				document.getElementById('body').innerHTML = songList;
+			})
+
+		</script>
+
+
+   	     <h1>Song List</h1>
+
+   	      <!-- creating my drop down menu -->
+
+   	     <form id="form-genre">
+   	     	 <select id="menuItems">
+   	     	 	 <option value="0"> Choose a genre </option>
+                 <option value="RnB">RnB</option>
+                 <option value="Electropop">Electropop</option>
+                 <option value="Pop">Pop</option>
+                 <option value="Soul">Soul</option>
+                 <option value="Tropical House">Tropical House</option>
+                 <option value="Dance-pop">Dance-pop</option>
+             </select>
+
+              <button type="button" 
+              		  value="Filter" 
+                      onclick="Filter()">Filter
+              </button>
+    	 </form>
+
+    	 <br><br>
+
+    	 <div id="filterMenu"></div>
+
+
+        <!-- Creating a function that filters -->
+    	 <script> 
+         function Filter(){
+         	
+         	
+    	 	let val = (document.getElementById('menuItems')).value;
+    	 	$.get("https://raw.githubusercontent.com/denzeloduro/json/main/songlist.json", function(song) {
+    		 	var songData = ""
+    		 	songList = JSON.parse(song)
+    		 
+    		 	
+    		 	songList.forEach(function(song){
+
+    		 		for (let i = 0; i < song.genre.length; i++) {
+    		 			if (val == song.genre[i])
+    		 				songData += song.title + "<br/>"
+
+
+    		 		}
+    		 		
+    		 		
+    		 		
+    		 		
+    		 	})
+    		 	document.getElementById('filterMenu').innerHTML = songData;
+    		 })
+
+    	 }  
+    	 
+    	</script>
+
+
+
+
+	</body>
+</html>
