@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 *{
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
@@ -14,4 +16,18 @@
 	text-align:left;
 	margin top:90px;
 	margin bottom:60px;
+}
+
+.button{
+	background-color: #000000;
+	color: #ffffff; 
+	padding: 5px 25px;
+	font: 0.875rem 'Lato',Helvetica, sans-serif;
+	border: none;
+
+}
+
+.button:hover {
+	background-color: #272727;
+
 }
